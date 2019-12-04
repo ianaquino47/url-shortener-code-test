@@ -6,6 +6,12 @@
                 <input type = 'text' name ='original_url'>
                 <input type = 'submit' value = 'shorten!'>
             </form>
+
+            <ul>
+                <% Url.links.each do |short_url, original_url| %>
+                    <li> <%= short_url %>: <a href=<%= original_url %>><%= original_url %></a></li>
+                <% end %>
+            </ul> 
         </center>
     </body>
 </html>
