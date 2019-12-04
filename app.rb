@@ -17,6 +17,7 @@ class UrlShortenerApp < Sinatra::Base
     end
 
     post '/' do
+        #reads the information from the POST request and responds with a JSON response of the short url and the original url
         data_request = JSON.parse request.body.read
         shortened_url = Url.shorten(data_request["original_url"])
         { :short_url => shortened_url[0], :url => shortened_url[1] }.to_json
