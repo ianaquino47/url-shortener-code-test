@@ -16,7 +16,7 @@ get '/:original_url' do
 end
 
 post '/' do
-    request = JSON.parse request.body.read
-    shortened_url = Url.shorten(request["original_url"])
+    data_request = JSON.parse request.body.read
+    shortened_url = Url.shorten(data_request["original_url"])
     { :short_url => shortened_url[0], :url => shortened_url[1] }.to_json
 end
