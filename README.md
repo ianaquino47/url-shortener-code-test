@@ -63,3 +63,37 @@ And send us the resulting `yournamehere-url-shortener-test.bundle` file.
 This `.bundle` file can be cloned using:
 
     git bundle clone bundle-filename.bundle -b master directory-name
+
+## Installation
+
+Fork this repository. To install all dependencies, run the code below:
+
+```
+$ bundle install
+```
+
+## Launching the app
+
+To start the app:
+
+```
+$ ruby app.rb
+```
+
+## Launching the app
+
+Once the local server is running, visit localhost:4567 on your browser.
+The main page should load where you can paste your long URLs on the box and shorten it!
+
+## Testing
+
+To run the tests:
+
+```
+$ rspec
+```
+
+## Submission
+
+Please fork this repository, write some code and update this README with a guide of how to
+run it.
