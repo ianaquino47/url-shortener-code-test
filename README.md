@@ -61,7 +61,7 @@ $ bundle install
 To start the app:
 
 ```
-$ ruby app.rb
+$ rackup -p 4567
 ```
 
 ## Launching the app
