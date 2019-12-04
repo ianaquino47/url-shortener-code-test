@@ -1,5 +1,5 @@
 class Url 
-    ID_LENGTH = 8
+    ID_LENGTH = 6
 
     @links = {}
     

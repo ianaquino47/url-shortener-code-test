@@ -8,8 +8,11 @@
             </form>
 
             <ul>
-                <% Url.links.each do |short_url, original_url| %>
-                    <li> <%= short_url %>: <a href=<%= original_url %>><%= original_url %></a></li>
+                <% Url.links.each do |shortened_url, original_url| %>
+                    <li> 
+                        Use <a href="localhost:4567/<%= shortened_url%>"> localhost:4567/<%= shortened_url%> </a> instead of
+                         <a href="<%= original_url%>"> <%= original_url%> </a>
+                    </li>
                 <% end %>
             </ul> 
         </center>
